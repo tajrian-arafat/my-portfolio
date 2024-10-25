@@ -42,3 +42,34 @@ section {
     background-color: #000000;
     color: #ffffff;
 }
+
+
+#projects {
+    padding: 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.project-card {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+}
+
+.project-card h3 {
+    margin-top: 0;
+}
+
+.project-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
