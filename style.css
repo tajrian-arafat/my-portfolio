@@ -73,3 +73,13 @@ section {
 .project-card a:hover {
     text-decoration: underline;
 }
+
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .project-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
