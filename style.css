@@ -71,18 +71,27 @@ section {
 }
 
 .project-card {
-    border: 1px solid #ddd;
-    padding: 15px;
+    width: 250px;
     margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: inline-block;
-    width: 200px;
     vertical-align: top;
+    text-align: center;
 }
 
 .project-card h3 {
-    margin-top: 0;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+
+.project-card p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
 }
 
 .project-card a {
@@ -192,9 +201,9 @@ html {
 
 .project-card img {
     width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 10px;
+    height: 150px; /* Set a fixed height for all images */
+    object-fit: cover; /* Ensures the image fits within the box and maintains aspect ratio */
+    border-radius: 5px;
 }
 
 
