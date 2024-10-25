@@ -144,3 +144,15 @@ section {
     background-color: #0056b3;
 }
 
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
