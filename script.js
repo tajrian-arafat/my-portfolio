@@ -17,10 +17,30 @@ window.onload = function() {
 
 const form = document.querySelector('form');
 
-form.addEventListener('submit', (e) => {
-    e.preventDefault(); // Prevent form from actually submitting for now
-    alert('Thank you for your message!');
-    form.reset(); // Clear form fields after submission
+form.addEventListener('submit', (event) => {
+    event.preventDefault(); // Prevent actual form submission
+
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    // Simple validation
+    if (!name || !email || !message) {
+        alert('Please fill out all fields.');
+        return;
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert('Please enter a valid email address.');
+        return;
+    }
+
+    // If all validations pass, you can proceed
+    alert('Form submitted successfully!');
+    form.reset(); // Optionally reset the form fields after submission
 });
 
 
