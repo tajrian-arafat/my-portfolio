@@ -39,9 +39,29 @@ section {
 }
 
 .dark-mode {
-    background-color: #000000;
-    color: #ffffff;
+    background-color: #121212;
+    color: #f5f5f5;
 }
+
+.dark-mode nav {
+    background-color: #1f1f1f;
+}
+
+.dark-mode .project-card, .dark-mode #contact, .dark-mode #about {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    border-color: #333;
+}
+
+.dark-mode a {
+    color: #bb86fc;
+}
+
+.dark-mode #back-to-top {
+    background-color: #bb86fc;
+    color: #121212;
+}
+
 
 
 #projects {

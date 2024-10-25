@@ -1,7 +1,18 @@
 console.log("Hello, World!");
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
+    const currentTheme = document.body.classList.contains("dark-mode") ? "dark" : "light";
+    localStorage.setItem("theme", currentTheme); // Store theme preference
 }
+
+// Check for saved theme on load
+window.onload = function() {
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+    }
+};
+
 
 
 const form = document.querySelector('form');
